@@ -1,0 +1,22 @@
+.stripe-wrapper{
+    background-color: transparent;
+
+    .stripe-sub-wrapper{
+        h3{
+            color:#fff;
+            font-family: $common-custome-dark-font-family-regular;
+            font-size: 24px;  
+        }
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        top: 50%; left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+                text-align: center;
+      div{
+          width: 100%;
+      }
+    }
+}

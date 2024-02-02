@@ -1,0 +1,2206 @@
+.common-dark-box {
+    .common-title-wrapper-dark {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .scroll-hide-show {
+        overflow-y: auto;
+        height: 100vh;
+    }
+    .card-box-main-wrapper {
+        .no-data-found {
+            h3 {
+                justify-content: center;
+                display: flex;
+                align-items: baseline;
+                a {
+                    text-decoration: underline;
+                }
+            }
+            button.common-btn-import {
+                margin-left: 20px;
+            }
+        }
+        .todays-exam{
+            .card-box-inner-wrapper{
+                .dark-card{
+                    background-color: #000;
+                    background-image: linear-gradient(
+                      to right,
+                      transparent 0%,
+                      rgba(255,255,255,0.3) 50%,
+                      transparent 100%
+                    );
+                    background-repeat: no-repeat;
+                    background-position: -100vw;
+                    animation: shineBg 4s infinite linear;
+                }
+                
+            }
+            }
+        .card-box-inner-wrapper {
+            display: block !important;
+            .dark-card {
+                background: $black;
+                margin-bottom: 10px;
+                padding: 10px;
+                cursor: pointer;
+                transition: 0.5s linear;
+                border-radius: 18px;
+                &:hover {
+                    -webkit-box-shadow: 0px 3px 5px -4px rgba(24, 220, 255, 1);
+                    -moz-box-shadow: 0px 3px 5px -4px rgba(24, 220, 255, 1);
+                    box-shadow: 0px 3px 6px -4px rgba(24, 220, 255, 1);
+                    -webkit-transform: translateY(-5px);
+                    transform: translateY(-5px);
+                }
+                &:hover .on-hover-show {
+                    opacity: 1 !important;
+                }
+                &:hover .exam-sub-inner-box .exam-title-names {
+                    color: $cart-dark-text-color !important;
+                }
+                &:hover .exam-sub-inner-box svg {
+                    color: $cart-dark-text-color !important;
+                }
+                &:hover .common-text-exapand {
+                    color: $white !important;
+                }
+                &:hover .common-text-exapand-id {
+                    color: $white !important;
+                }
+                &:hover .expand-btn-box svg {
+                    color: $white !important;
+                }
+                &:hover .button-box-exam-wrapper {
+                    .button-box-exam {
+                        .ongoing-btn-box {
+                            button.btn.btn-ongoing {
+                                border: 1px solid $btn-ongoing-border-color;
+                                color: $green !important;
+                                opacity: 1;
+                                svg {
+                                    color: $green !important;
+                                }
+                            }
+                        }
+                        .assign-btn-box {
+                            button.btn.btn-assign {
+                                border: 1px solid $btn-assign-border-color;
+                                color: $primary !important;
+                                svg {
+                                    color: $primary !important;
+                                }
+                            }
+                        }
+                        .export-report-btn-box {
+                            button.btn.btn-export-report {
+                                border: 1px solid $exam-info-button-common;
+                                color: $exam-info-button-common !important;
+                                svg {
+                                    color: $exam-info-button-common !important;
+                                }
+                            }
+                        }
+                        .live-exam-btn-box {
+                            button.btn.btn-live-exam {
+                                border: 1px solid $danger;
+                                color: $danger !important;
+                                // opacity: 1;
+                                svg {
+                                    color: $danger !important;
+                                    path {
+                                        stroke: $danger !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .exam-text-name-box {
+                    // min-width: 20%;
+                    // overflow: hidden;
+                    // display: inline-block;
+                    // text-overflow: ellipsis;
+                    // white-space: nowrap;
+                    // width: 20%;
+                  
+                    .common-text-exapand {
+                        font-size: $text-size-sixteen;
+                        color: $cart-dark-text-color;
+                        font-family: $common-custome-dark-font-family-regular;
+                        word-break: break-word;
+
+                        span.checkbox-right-margin{
+                                svg{
+                                    color:$green;
+                                    font-size: 18px;
+                                    margin-right: 10px;
+                                    margin-left: 10px;
+                                }
+                            }
+                    }
+                }
+
+                .exam-name-box {
+                    // display: flex;
+                    // align-items: center;
+                    .exam-sub-box {
+                        // border-left: 1px solid #52575a;
+                        // margin: 0px 0px 0px 20px;
+                        // padding-left: 20px;
+                        display: flex;
+                        align-items: flex-end;
+                        // opacity: 0;
+                        transition: 0.5s linear;
+
+                        .exam-sub-inner-box {
+                            margin-right: 9px;
+                            border-right: 1px solid #1f1d1d;
+                            padding: 0px 9px 0px 0px;
+                            svg {
+                                color: $exam-title-names;
+                                font-size: 12px;
+                                vertical-align: middle;
+                                margin-top: -1px;
+                                margin-right: 3px;
+                                path {
+                                    stroke: #4f504f;
+                                }
+                            }
+                            .exam-title-names {
+                                font-size: 13px;
+                                color: $exam-title-names;
+                                font-family: $common-custome-dark-font-family-regular;
+                                transition: 0.5s linear;
+                            }
+                        }
+                    }
+                }
+                .button-box-exam-wrapper {
+                    .button-box-exam {
+                        display: flex;
+                        justify-content: flex-end;
+                        .ongoing-btn-box {
+                            margin-right: 15px;
+                            button.btn.btn-ongoing {
+                                background: $bg-transparent;
+                                border: 1px solid $btn-ongoing-border-color;
+                                padding: 5px 15px;
+                                color: $green;
+                                font-family: $common-custome-dark-font-family-regular;
+                                font-size: $text-size-medium;
+                                text-align: center;
+                                transition: 0.5s linear;
+                                border-radius: 25px;
+                                opacity: 0.2;
+                                svg {
+                                    font-size: 20px;
+                                    color: $green;
+                                    margin: 0 auto;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                        .assign-btn-box {
+                            button.btn.btn-assign {
+                                background: $bg-transparent;
+                                border: 1px solid $btn-assign-border-color;
+                                padding: 5px 15px;
+                                color: $primary;
+                                font-family: $common-custome-dark-font-family-regular;
+                                font-size: $text-size-medium;
+                                text-align: center;
+                                transition: 0.5s linear;
+                                border-radius: 25px;
+                                svg {
+                                    font-size: 20px;
+                                    color: $primary;
+                                    margin: 0 auto;
+                                    margin-right: 5px;
+                                }
+                                &:hover {
+                                    background: $primary;
+                                    color: $white !important;
+                                }
+                                &:hover svg {
+                                    color: $white !important;
+                                }
+                                &:focus svg {
+                                    color: $white !important;
+                                }
+                            }
+                        }
+                        .export-report-btn-box {
+                            margin-right: 15px;
+                            button.btn.btn-export-report {
+                                background: $bg-transparent;
+                                border: 1px solid $exam-info-button-common;
+                                padding: 5px 15px;
+                                color: $exam-info-button-common;
+                                font-family: $common-custome-dark-font-family-regular;
+                                font-size: $text-size-medium;
+                                text-align: center;
+                                transition: 0.5s linear;
+                                border-radius: 25px;
+                                svg {
+                                    font-size: 20px;
+                                    color: $exam-info-button-common;
+                                    margin: 0 auto;
+                                    margin-right: 5px;
+                                }
+                                &:hover {
+                                    background: $exam-info-button-common;
+                                    color: $white !important;
+                                }
+                                &:hover svg {
+                                    color: $white !important;
+                                }
+                                &:focus svg {
+                                    color: $white !important;
+                                }
+                            }
+                        }
+                        .live-exam-btn-box {
+                            margin-right: 15px;
+                            button.btn.btn-live-exam {
+                                background: $bg-transparent;
+                                border: 1px solid $danger;
+                                padding: 5px 8px;
+                                color: $danger;
+                                font-family: $common-custome-dark-font-family-regular;
+                                font-size: $text-size-medium;
+                                text-align: center;
+                                transition: 0.5s linear;
+                                border-radius: 25px;
+                                // opacity: 0.2;
+                                display: flex;
+                                align-items: center;
+                                svg {
+                                    font-size: 20px;
+                                    color: $danger;
+                                    margin: 0 auto;
+                                    margin-right: 5px;
+                                    path {
+                                        stroke: $danger !important;
+                                    }
+                                }
+                                &:hover {
+                                    background: $danger;
+                                    color: $white !important;
+                                }
+                                &:hover svg path {
+                                    color: $white !important;
+                                    stroke: $white !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .exapand-card-row {
+                    // display: flex;
+                    // align-items: center;
+                    // width: 100%;
+                    .last-col-wrap {
+                        text-align: right;
+                    }
+                    .exapand-card-col-id {
+                      
+                        .exapnd-card-box {
+                            .id-box {
+                                .common-text-exapand-id {
+                                    font-size: $text-size-sixteen;
+                                    color: $cart-dark-text-color;
+                                    font-family: $common-custome-dark-font-family-regular;
+                                }
+                                .align-center{
+                                   text-align: center;
+                                }
+                            }
+                             .btn-product-buy {
+                                    background: transparent;
+                                    border: 1px solid #ff420f;
+                                    padding: 5px 8px;
+                                    color: #ff420f;
+                                    font-family: "GOTHIC";
+                                    font-size: 15px;
+                                    text-align: center;
+                                    transition: 0.5s linear;
+                                    border-radius: 25px;
+                                    box-shadow: 0 0 10px 3px rgba(255, 66, 15, 0.35);
+                                    margin-left: 15px;
+                                    &:hover {
+                                        background: #ff420f;
+                                        color: #fff;
+                                    }
+                              }
+                        }
+                    }
+
+                    .exapand-card-col-ProductList {
+                      
+                        .exapnd-card-box {
+                            .id-box {
+                                .common-text-exapand-id {
+                                    font-size: $text-size-sixteen;
+                                    color: $cart-dark-text-color;
+                                    font-family: $common-custome-dark-font-family-regular;
+                                }
+                                .align-center{
+                                   text-align: center;
+                                }
+                            }
+                            .align-center{
+                                   text-align: center;
+                                }
+
+                             .btn-product-buy {
+                                    background: transparent;
+                                    border: 1px solid #ff420f;
+                                    padding: 5px 8px;
+                                    color: #ff420f;
+                                    font-family: "GOTHIC";
+                                    font-size: 15px;
+                                    text-align: center;
+                                    transition: 0.5s linear;
+                                    border-radius: 25px;
+                                    box-shadow: 0 0 10px 3px rgba(255, 66, 15, 0.35);
+                                   align-self: flex-end;
+                                    padding-right: 20px;
+                                    padding-left: 20px;
+                                    &:hover {
+                                        background: #ff420f;
+                                        color: #fff;
+                                    }
+                              }
+                        }
+                    }
+                    // .exapand-card-col-exam-nm {
+                    //     width: 40%;
+                    // }
+                    .exapand-card-col-exam-buttons {
+                        width: 50%;
+                    }
+                    .exapand-card-col-arrow-button {
+                        // width: 5%;
+                        .btn-arrow {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+                .on-hover-show {
+                    opacity: 0;
+                    transition: 0.5s linear;
+                }
+                .expand-arrow-box-exam {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    width: 100%;
+                    .expand-btn-box {
+                        .btn-arrow {
+                            svg {
+                                transition: all 0.3s ease;
+                            }
+                        }
+                    }
+                    .expand-btn-box.active {
+                        .btn-arrow {
+                            svg {
+                                transform: rotate(180deg);
+                                transition: all 0.3s ease;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .color-white{
+color: white;
+        }
+    }
+
+    .expandable {
+        background: #000;
+        margin-top: -10px;
+        margin: -10px 15px 10px 15px;
+        border-bottom-right-radius: 18px;
+        border-bottom-left-radius: 18px;
+        .uk-background-muted {
+            background: #060606;
+            box-shadow: inset 0 -6px 5px -5px #18dcff;
+            overflow: hidden;
+            border-bottom-right-radius: 18px;
+            border-bottom-left-radius: 18px;
+            .inner.uk-grid {
+                padding: 10px;
+                .exapandable-content {
+                    background: #131111;
+                    padding: 20px 10px;
+                    margin-bottom: 10px;
+                    border-radius: 9px;
+                    display: flex;
+                    align-items: center;
+                    p {
+                        color: #bfb0b0;
+                        margin-bottom: 0px;
+                        font-family: $common-custome-dark-font-family-regular;
+                        font-size: $default-font-size;
+                        label {
+                            color: #fff;
+                            margin-right: 8px;
+                            font-family: $common-custome-dark-font-family-bold;
+                            font-size: $default-font-size;
+                            letter-spacing: 1px;
+                        }
+                    }
+                    p.date-created {
+                        text-align: right;
+                    }
+                }
+                .exapandable-content-button-box {
+                    display: flex;
+                    justify-content: flex-end;
+                    width: fit-content;
+                    float: right;
+                    text-align: right;
+                    button.btn.btn-edit {
+                        color: $cart-dark-text-color;
+                        padding: 0px;
+                        transition: 0.5s linear;
+                        font-size: $text-size-sixteen;
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                    button.btn.btn-delete {
+                        color: $danger;
+                        transition: 0.5s linear;
+                        font-size: $text-size-sixteen;
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                    button.btn-assign-details {
+                        background: transparent;
+                        border: 1px solid #7a00ff;
+                        padding: 5px 8px;
+                        color: #7a00ff;
+                        font-family: "GOTHIC";
+                        font-size: 15px;
+                        text-align: center;
+                        transition: 0.5s linear;
+                        border-radius: 25px;
+                        box-shadow: 0 0 10px 3px rgba(122, 0, 255, 0.35);
+                        margin-left: 5px;
+                        &:hover {
+                            background: #7a00ff;
+                            color: #fff;
+                        }
+                    }
+                    button.btn.btn-preview {
+                        background: transparent;
+                        border: 1px solid #ff420f;
+                        padding: 5px 8px;
+                        color: #ff420f;
+                        font-family: "GOTHIC";
+                        font-size: 15px;
+                        text-align: center;
+                        transition: 0.5s linear;
+                        border-radius: 25px;
+                        box-shadow: 0 0 10px 3px rgba(255, 66, 15, 0.35);
+                        margin-left: 15px;
+                        &:hover {
+                            background: #ff420f;
+                            color: #fff;
+                        }
+                    }
+                     button.btn.btn-report {
+                        background: transparent;
+                        border: 1px solid #8be075;
+                        padding: 5px 8px;
+                        color: #8be075;
+                        font-family: "GOTHIC";
+                        font-size: 15px;
+                        text-align: center;
+                        transition: 0.5s linear;
+                        border-radius: 25px;
+                        // box-shadow: 0 0 10px 3px rgba(255, 66, 15, 0.35);
+                        margin-left: 15px;
+                        &:hover {
+                            background: #8be075;;
+                            color: #fff;
+                        }
+                    }
+
+                     button.btn.btn-next {
+                        background: transparent;
+                        border: 1px solid #67cdfc;
+                        padding: 5px 8px;
+                        color: #67cdfc;
+                        font-family: "GOTHIC";
+                        font-size: 15px;
+                        text-align: center;
+                        transition: 0.5s linear;
+                        border-radius: 25px;
+                        // box-shadow: 0 0 10px 3px rgba(255, 66, 15, 0.35);
+                        margin-left: 15px;
+                        &:hover {
+                            background: #67cdfc;
+                            color: #fff;
+                        }
+                    }
+                    button.btn.btn-akc-bkc {
+                        background: transparent;
+                        border: 1px solid #00b67a;
+                        padding: 5px 8px;
+                        color: #00b67a;
+                        font-family: "GOTHIC";
+                        font-size: 15px;
+                        text-align: center;
+                        transition: 0.5s linear;
+                        border-radius: 25px;
+                        box-shadow: 0 0 10px 3px rgba(0, 182, 122, 0.35);
+                        margin-left: 15px;
+                        &:hover {
+                            background: #00b67a;
+                            color: #fff;
+                        }
+                    }
+                }
+                .left-btn-expand-box {
+                    justify-content: flex-start;
+                    float: none;
+                    // width: 285px;
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .filterMenu {
+        position: absolute;
+        right: 175px;
+        margin-top: 19%;
+        width: 40%;
+        height: max-content;
+        z-index: 99999;
+        background-color: #dbdbdbb5;
+        color: #000;
+        border-radius: 10px;
+        box-shadow: 0px 0px 25px black;
+        cursor: pointer;
+
+        .date-range-for-filter {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+        }
+        .single-date {
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+        }
+        .applicable-for-filter {
+            display: flex;
+            flex-direction: column;
+
+            .applicable-for-header {
+                padding-left: 0.7rem;
+                padding-right: 0.7rem;
+
+                label {
+                    color: #000;
+                    font-weight: 600;
+                }
+            }
+            .applicable-for-items {
+                display: flex;
+                flex-direction: row;
+                padding-left: 0.7rem;
+                padding-right: 0.7rem;
+            }
+        }
+        .filter-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    // ************************************************************
+    .glow-on-hover {
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+    }
+
+    .glow-on-hover:before {
+        content: "";
+        background: linear-gradient(
+            45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000
+        );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .glow-on-hover:active {
+        color: rgb(240, 227, 227);
+    }
+
+    .glow-on-hover:active:after {
+        background: transparent;
+    }
+
+    .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+
+    .glow-on-hover:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgb(213, 205, 205);
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+    @keyframes glowing {
+        0% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 400% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
+    // ************************************************************
+}
+
+.accordian-dark-wrapper {
+    button {
+        background: $bg-transparent;
+        width: 100%;
+        border: 0px;
+        box-shadow: none;
+        outline: none;
+        text-align: left;
+    }
+}
+
+.filter-main-wrapper {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    margin: 10px 0px 25px 0px;
+
+    .filter-right-box {
+        // width: 70%;
+        // display: flex;
+        // justify-content: flex-end;
+        // align-items: center;
+        .form-group {
+            margin-bottom: 0px;
+        }
+    }
+    .question-box-check-box {
+        margin-top: -10px;
+    }
+    .mr-r {
+        margin-right: 15px;
+    }
+    button.uploadeBtn {
+        background: transparent;
+        border: 1px solid $cyan;
+        border-radius: 20px;
+        color: #fff;
+        padding: 5px 15px;
+        font-size: 0.875rem;
+        font-family: "GOTHIC";
+        /* box-shadow: 0px 0px 12px 0px #36ab21; */
+        transition: 0.5s linear;
+        border-radius: 25px;
+    }
+    button.uploadeBtn:hover {
+        background: $cyan;
+        color: #fff;
+    }
+}
+
+.sheduled-preview-box {
+    margin-bottom: 30px;
+    .sheduled-preview-header-box {
+        .sheduled-preview-header-sub {
+            display: flex;
+            align-items: center;
+            border-bottom: var(--border-color-nav-sider-bar);
+            .sheduled-preview-header {
+                padding: 10px;
+                // text-align: center;
+                .sheduled-preview-header-title {
+                    color: $header-title-color;
+                    font-size: $default-font-size;
+                    font-family: $common-custome-dark-font-family-bold;
+                    svg {
+                        margin: 0px 3px;
+                    }
+                }
+            }
+            .sheduled-preview-header.align-left {
+                text-align: left;
+            }
+        }
+    }
+    .sheduled-preview-content-box {
+        position: relative;
+        max-height: 300px;
+        overflow-y: auto;
+        .sheduled-preview-content-sub {
+            display: flex;
+            align-items: center;
+            border-bottom: var(--border-color-nav-sider-bar);
+            .sheduled-preview-content {
+                padding: 10px;
+                //  text-align: center;
+                .sheduled-preview-content-text {
+                    color: var(--text-color-muted);
+                    font-size: $default-font-size;
+                    font-family: $common-custome-dark-font-family-regular;
+                    svg {
+                        margin: 0px 10px;
+                    }
+                }
+                .date-time-edit-main-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .date-time-edit-wrapper {
+                        display: flex;
+                        align-items: center;
+                        .form-group {
+                            margin-bottom: 0px;
+                        }
+                        .action-btn-wrap-apply {
+                            margin-left: 20px;
+                            opacity: 0;
+                            transition: 0.5s linear;
+                            button.uploadeBtn {
+                                background: transparent;
+                                border: 1px solid $cyan;
+                                color: #fff;
+                                padding: 5px 15px;
+                                font-size: 0.875rem;
+                                font-family: "GOTHIC";
+                                /* box-shadow: 0px 0px 12px 0px #36ab21; */
+                                transition: 0.5s linear;
+                                border-radius: 25px;
+                                text-align: center;
+                            }
+                            button.uploadeBtn:hover {
+                                background: $cyan;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .action-btn-wrap-cancel {
+                        opacity: 0;
+                        transition: 0.5s linear;
+                        .closeBtn {
+                            border: 0px;
+                            padding: 5px 8px;
+                            &:hover {
+                                background: transparent;
+                            }
+                            &:focus {
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .sheduled-preview-content.align-left {
+                text-align: left;
+            }
+            &:hover .date-time-edit-main-wrapper .action-btn-wrap-cancel {
+                opacity: 1;
+            }
+            &:hover .date-time-edit-main-wrapper .date-time-edit-wrapper .action-btn-wrap-apply {
+                opacity: 1;
+            }
+        }
+        .sheduled-preview-content-sub-even {
+            background: #131111;
+            transition: 0.5s linear;
+            &:hover {
+                background: #0a0a0a;
+            }
+        }
+        .sheduled-preview-content-sub-odd {
+            background: $black;
+            transition: 0.5s linear;
+            &:hover {
+                background: #0a0a0a;
+            }
+        }
+    }
+}
+
+.shedule-preview-box {
+    .shedule-preview-header-box {
+        .shedule-preview-header-sub {
+            display: flex;
+            align-items: center;
+            border-bottom: var(--border-color-nav-sider-bar);
+            .shedule-preview-header {
+                padding: 10px;
+                text-align: center;
+                .shedule-preview-header-title {
+                    color: $header-title-color;
+                    font-size: $default-font-size;
+                    font-family: $common-custome-dark-font-family-bold;
+                }
+            }
+            .shedule-preview-header.align-left {
+                text-align: left;
+            }
+        }
+    }
+    .shedule-preview-content-box-scroll {
+        position: relative;
+        max-height: 380px;
+        overflow-y: auto;
+        .shedule-preview-content-box {
+            .shedule-preview-content-sub {
+                display: flex;
+                align-items: center;
+                border-bottom: var(--border-color-nav-sider-bar);
+                .shedule-preview-content {
+                    padding: 10px;
+                    text-align: center;
+                    span.instituteNm {
+                        background: #2b2b2b9e;
+                        padding: 5px 10px;
+                        font-size: $text-size-medium;
+                        font-family: $common-custome-dark-font-family-regular;
+                        color: #888282;
+                        display: inline-block;
+                    }
+                    .shedule-preview-content-text {
+                        color: var(--text-color-muted);
+                        font-size: $default-font-size;
+                        font-family: $common-custome-dark-font-family-regular;
+                    }
+                }
+                .shedule-preview-content.align-left {
+                    text-align: left;
+                }
+            }
+            .disable-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #ffffff24;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.5s linear;
+                opacity: 0;
+                display: none;
+                h3 {
+                    color: $black;
+                    font-size: 28px;
+                    font-family: $common-custome-dark-font-family-regular;
+                }
+            }
+        }
+    }
+}
+
+.subject-mapping-box {
+    label.subject-mapping-label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #bfb0b0;
+        font-family: $common-custome-dark-font-family-regular;
+        font-size: $default-font-size;
+        margin-bottom: 0px;
+    }
+    .subject-mapping-header-title {
+        .subject-mapping-label-title {
+            color: $input-label-color;
+            font-size: $text-size-small;
+            font-family: $common-custome-dark-font-family-regular;
+            margin-bottom: 20px;
+        }
+    }
+    .subject-mapping-select-list-box {
+        .form-group {
+            margin-bottom: 0px;
+        }
+    }
+    .mr-b {
+        margin-bottom: 15px;
+    }
+    .subject-mapping-list-box {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
+.exam-report-main-Wrapper {
+    margin-top: 30px;
+    .exam-report-file-explorer {
+        display: flex;
+        width: 100%;
+        .explorerRowContentListWrap {
+            height: 250px !important;
+        }
+        .left-side-report {
+            width: 80%;
+            .select-all-box-wrapper {
+                background: #252424;
+                transition: 0.5s linear;
+                padding: 10px;
+            }
+            .scroll-select-report-box {
+                max-height: 40vh;
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+            .select-report-content-box {
+                transition: 0.5s linear;
+                padding: 10px;
+                .form-check.form-check-neonWhite {
+                    .form-check-label {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+                .select-single-report-content-wrapper {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    .select-single-report-content-text {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .select-single-report-content-text-number {
+                            color: $white;
+                            font-family: $common-custome-dark-font-family-regular;
+                            font-size: $text-size-medium;
+                            margin: 0px 15px;
+                        }
+                    }
+                    .select-single-report-content {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        justify-content: space-between;
+                        .select-single-report-content-text {
+                            font-size: 14px;
+                            font-family: $common-custome-dark-font-family-regular;
+                            color: #bfb0b0;
+                            svg {
+                                color: #00f2fd;
+                                margin: 0px 8px;
+                            }
+                        }
+                        .select-single-report-content-date {
+                            font-size: 14px;
+                            font-family: $common-custome-dark-font-family-regular;
+                            color: #676565;
+                        }
+                    }
+                }
+            }
+            .select-report-content-box-even {
+                background: #000000;
+            }
+            .select-report-content-box-odd {
+                background: #131111;
+            }
+        }
+        .right-side-report {
+            width: 20%;
+            position: relative;
+            .right-sticky-bar {
+                position: sticky;
+                top: 0px;
+                left: 10px;
+                .generate-report-btn-box {
+                    margin: 0px 0px 25px 0px;
+                    text-align: center;
+                    .generateReportBtn {
+                        background: $bg-transparent;
+                        border: 1px solid $btn-assign-border-color;
+                        padding: 8px 15px;
+                        color: $primary;
+                        font-family: $common-custome-dark-font-family-regular;
+                        font-size: $text-size-medium;
+                        text-align: center;
+                        transition: 0.5s linear;
+                        border-radius: 25px;
+                        width: 160px;
+                        position: relative;
+                        overflow: hidden;
+                        cursor: pointer;
+                        .circle {
+                            width: 0%;
+                            height: 0%;
+                            opacity: 0;
+                            line-height: 40px;
+                            border-radius: 50%;
+                            background: $primary;
+                            position: absolute;
+                            -webkit-transition: all 0.5s ease-Out;
+                            transition: all 0.5s ease-Out;
+                            top: 20px;
+                            left: 70px;
+                            z-index: -1;
+                        }
+                        &:hover {
+                            background: $primary;
+                            color: $white;
+                        }
+                        &:hover .circle {
+                            width: 200%;
+                            height: 500%;
+                            opacity: 1;
+                            top: -70px;
+                            left: -70px;
+                        }
+                    }
+                }
+                .download-report-btn-box {
+                    text-align: center;
+                    .download-Report-Btn {
+                        background: $bg-transparent;
+                        border: 1px solid #bfc0c0;
+                        padding: 4px 15px;
+                        color: #bfc0c0;
+                        font-family: $common-custome-dark-font-family-regular;
+                        font-size: $text-size-medium;
+                        text-align: center;
+                        transition: 0.5s linear;
+                        border-radius: 25px;
+                        width: 160px;
+                        position: relative;
+                        overflow: hidden;
+                        cursor: pointer;
+                        .circle {
+                            width: 0%;
+                            height: 0%;
+                            opacity: 0;
+                            line-height: 40px;
+                            border-radius: 50%;
+                            background: #bfc0c0;
+                            position: absolute;
+                            -webkit-transition: all 0.5s ease-Out;
+                            transition: all 0.5s ease-Out;
+                            top: 20px;
+                            left: 70px;
+                            z-index: -1;
+                        }
+                        &:hover {
+                            background: #bfc0c0;
+                            color: #2d3142;
+                        }
+                        &:hover .circle {
+                            width: 200%;
+                            height: 500%;
+                            opacity: 1;
+                            top: -70px;
+                            left: -70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .exam-report-student-main-wrap {
+        background: #ffffffd4;
+        padding: 20px 10px;
+        position: relative;
+        margin-top: 25px;
+        .examination-report-title {
+            text-align: center;
+            padding: 20px;
+            h3 {
+                font-family: $common-custome-dark-font-family-regular;
+                color: $primary;
+                font-size: 26px;
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+            h4 {
+                font-family: $common-custome-dark-font-family-regular;
+                color: $primary;
+                font-size: 21px;
+            }
+        }
+        .exam-report-header-title {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid $darkslategray;
+            border-bottom: 1px solid $darkslategray;
+            padding: 10px 0px;
+            th,
+            td {
+                text-align: center;
+            }
+            .common-exam-report-title {
+                &::before {
+                    border-right: 1px solid #000;
+                    width: 2px;
+                    height: 10px;
+                }
+                font-size: 13px;
+                color: $black;
+                font-family: $common-custome-dark-font-family-bold;
+                margin-bottom: 0px;
+                text-align: center;
+                span {
+                    display: block;
+                    font-size: 13px;
+                    color: $black;
+                    font-family: $common-custome-dark-font-family-regular;
+                    text-align: center;
+                }
+                button.sort-btn {
+                    padding: 0px;
+                    font-size: 20px;
+                    background: $bg-transparent;
+                    color: $black;
+                    border: 0px;
+                    margin: 0px 5px;
+                }
+                button.sort-btn-roation {
+                    transform: rotate(180deg);
+                }
+            }
+            .common-exam-report-title.stud-nm-title {
+                text-align: left;
+            }
+
+            .stud-nm-title {
+                text-align: left;
+            }
+        }
+        .exam-report-content-box {
+            // height: 500px;
+            // overflow-y: auto;
+            position: sticky;
+            top: 0;
+            .exam-report-content-inner-box {
+                display: flex;
+                border-bottom: 1px solid $primary;
+                .common-exam-report-content {
+                    font-size: $default-font-size;
+                    color: $primary;
+                    font-family: $common-custome-dark-font-family-regular;
+                    padding: 10px 5px;
+                    text-align: center;
+                }
+            }
+
+            .live-count-label-box {
+                margin: 0 auto;
+                margin-bottom: 15px;
+                background: transparent;
+                padding: 0px;
+                width: max-content;
+                label {
+                    font-size: $text-size-sixteen;
+                    margin-bottom: 0px;
+                    font-family: $common-custome-dark-font-family-regular;
+                    color: #bfb0b0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    //   width: 220px;
+                    margin: 0 auto;
+                    span.counter-flip-span {
+                        margin-left: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-dark.exam-report-modal-dark,
+.modal-dark.live-exam-report-modal-dark,
+.modal-dark.akc-bkc-preview-modal-dark,
+.modal-dark.exam-question-preview-modal-dark,
+.modal-dark.confirmation-modal-dark,
+.modal-dark.assigned-exam-details-modal-dark {
+    position: relative;
+    .modal-title-box {
+        position: absolute;
+        top: -48px;
+        left: -1px;
+        padding: 10px 10px 20px 10px;
+        background: #020202;
+        width: auto;
+        background-color: #020202;
+        background-clip: padding-box;
+        border: 1px solid #000;
+        box-shadow: 0px 0px 7px 0px #18dcff;
+        border-radius: 0.3rem;
+        z-index: -1;
+        animation: mymove 4s;
+        animation-iteration-count: 1;
+        // animation-timing-function: linear;
+    }
+    .modal-header {
+        padding: 0px;
+        .button.close {
+            z-index: 999;
+            border-radius: 50px;
+            opacity: 1;
+            padding: 5px 10px;
+        }
+    }
+    
+}
+
+.modal-dark.create-test-modal {
+    position: relative;
+    margin-top: 20px;
+    .upload-box {
+        display: flex;
+        align-items: center;
+        margin: 30px 0px 15px 0px;
+        .selected-file-box {
+            margin-left: 15px;
+            span {
+                color: $primary;
+                font-size: $text-size-small;
+                font-family: $common-custome-dark-font-family-regular;
+            }
+            button.closefile.btn.btn-primary {
+                background: $bg-transparent;
+                border: 0px;
+                padding: 0px 5px;
+                font-size: $text-size-medium;
+                color: $danger;
+            }
+        }
+    }
+    a.mapping-error-box {
+        text-decoration: underline;
+        font-size: $default-font-size;
+        font-family: $common-custome-dark-font-family-regular;
+        color: $danger;
+    }
+    a.mapping-success-box {
+        text-decoration: underline;
+        font-size: $default-font-size;
+        font-family: $common-custome-dark-font-family-regular;
+        color: $green;
+    }
+    .exam-details-box {
+        position: relative;
+        .overlay-exam-details {
+            background: #ffffff26;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            opacity: 0.3;
+        }
+    }
+}
+
+.live-exam-report-main-Wrapper {
+    .live-count-main-wrapper {
+        .live-count-label-box {
+            margin-bottom: 15px;
+            background: #1b1b1b;
+            padding: 10px;
+            label {
+                font-size: $text-size-sixteen;
+                margin-bottom: 0px;
+                font-family: $common-custome-dark-font-family-regular;
+                color: #bfb0b0;
+                display: flex;
+                justify-content: center;
+                //   width: 220px;
+                margin: 0 auto;
+                span.counter-flip-span {
+                    margin-left: 15px !important;
+                }
+            }
+        }
+    }
+    .live-exam-report-file-explorer {
+        display: flex;
+        width: 100%;
+        .explorerRowContentListWrap {
+            height: 250px !important;
+        }
+        .left-side-report {
+            width: 75%;
+            .select-all-box-wrapper {
+                background: #252424;
+                transition: 0.5s linear;
+                padding: 10px;
+            }
+            .scroll-select-report-box {
+                max-height: 40vh;
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+            .select-report-content-box {
+                transition: 0.5s linear;
+                padding: 10px;
+                .form-check.form-check-neonWhite {
+                    .form-check-label {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+                .select-single-report-content-wrapper {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    .select-single-report-content-text {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .select-single-report-content-text-number {
+                            color: $white;
+                            font-family: $common-custome-dark-font-family-regular;
+                            font-size: $text-size-medium;
+                            margin: 0px 15px;
+                        }
+                    }
+                    .select-single-report-content {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        justify-content: space-between;
+                        .select-single-report-content-text {
+                            font-size: 14px;
+                            font-family: $common-custome-dark-font-family-regular;
+                            color: #bfb0b0;
+                            svg {
+                                color: #00f2fd;
+                                margin: 0px 8px;
+                            }
+                        }
+                        .select-single-report-content-date {
+                            font-size: 14px;
+                            font-family: $common-custome-dark-font-family-regular;
+                            color: #676565;
+                        }
+                    }
+                }
+            }
+            .select-report-content-box-even {
+                background: #000000;
+            }
+            .select-report-content-box-odd {
+                background: #131111;
+            }
+        }
+        .right-side-report {
+            width: 25%;
+            position: relative;
+            .right-sticky-bar {
+                position: sticky;
+                top: 0px;
+                left: 10px;
+                padding: 0px 10px 10px 10px;
+                flex-direction: column;
+                height: 100%;
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+                .refresh-text-box {
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    label {
+                        display: flex;
+                        align-items: center;
+                        font-size: $text-size-small;
+                        margin-bottom: 0px;
+                        font-family: $common-custome-dark-font-family-regular;
+                        color: $cart-dark-text-color;
+                        .form-control {
+                            width: 60px;
+                            margin: 0px 10px;
+                        }
+                    }
+
+                    .refresh-btn-box {
+                        margin: 0px 0px 0px 10px;
+                        text-align: center;
+                        .refreshBtn {
+                            background: $bg-transparent;
+                            border: 1px solid $btn-assign-border-color;
+                            padding: 7px 10px;
+                            color: $primary;
+                            font-family: $common-custome-dark-font-family-regular;
+                            font-size: $text-size-small;
+                            text-align: center;
+                            transition: 0.5s linear;
+                            border-radius: 25px;
+                            width: fit-content;
+                            position: relative;
+                            overflow: hidden;
+                            cursor: pointer;
+                            svg {
+                                font-size: 14px;
+                            }
+                            .circle {
+                                width: 0%;
+                                height: 0%;
+                                opacity: 0;
+                                line-height: 40px;
+                                border-radius: 50%;
+                                background: $primary;
+                                position: absolute;
+                                -webkit-transition: all 0.5s ease-Out;
+                                transition: all 0.5s ease-Out;
+                                top: 20px;
+                                left: 70px;
+                                z-index: -1;
+                            }
+                            &:hover {
+                                background: $primary;
+                                color: $white;
+                            }
+                            &:hover svg g {
+                                fill: $white;
+                            }
+                            &:hover .circle {
+                                width: 200%;
+                                height: 500%;
+                                opacity: 1;
+                                top: -70px;
+                                left: -70px;
+                            }
+                        }
+                    }
+                }
+                .download-report-btn-box {
+                    text-align: center;
+                    .download-Report-Btn {
+                        background: $bg-transparent;
+                        border: 2px solid #bfc0c0;
+                        padding: 8px 15px;
+                        color: #bfc0c0;
+                        font-family: $common-custome-dark-font-family-regular;
+                        font-size: $text-size-medium;
+                        text-align: center;
+                        transition: 0.5s linear;
+                        border-radius: 25px;
+                        width: 160px;
+                        position: relative;
+                        overflow: hidden;
+                        cursor: pointer;
+                        .circle {
+                            width: 0%;
+                            height: 0%;
+                            opacity: 0;
+                            line-height: 40px;
+                            border-radius: 50%;
+                            background: #bfc0c0;
+                            position: absolute;
+                            -webkit-transition: all 0.5s ease-Out;
+                            transition: all 0.5s ease-Out;
+                            top: 20px;
+                            left: 70px;
+                            z-index: -1;
+                        }
+                        &:hover {
+                            color: #2d3142;
+                        }
+                        &:hover .circle {
+                            width: 200%;
+                            height: 500%;
+                            opacity: 1;
+                            top: -70px;
+                            left: -70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.live-count-label-box span {
+    font-size: 12px !important;
+    font-family: "GOTHIC" !important;
+    //   color: #fff!important;
+    padding: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 4px !important;
+}
+
+.exam-question-preview-box {
+    margin-top: 30px;
+    .exam-question-preview-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        span {
+            font-family: "GOTHIC";
+            font-size: 16px;
+            color: #bfb0b0;
+        }
+    }
+    .accordian-preview-box {
+        .accordion {
+            .card-header {
+                background: #1b1b1b;
+                margin-bottom: 10px;
+                padding: 10px;
+                cursor: pointer;
+                transition: 0.5s linear;
+                width: 100%;
+                border-radius: 9px;
+                border: 0px;
+                text-align: center;
+                span {
+                    font-size: 16px;
+                    color: #888686;
+                    font-family: "GOTHIC";
+                    text-align: center;
+                }
+            }
+            .accordian-content-box {
+                background: #fffefe;
+                padding: 15px;
+                margin-bottom: 10px;
+                overflow-y: auto;
+                max-height: 55vh;
+                overflow-x: hidden;
+                .question-box {
+                    border-bottom: 1px solid #ccc;
+                    margin-bottom: 20px;
+                    p {
+                        display: flex;
+                        span.question-number {
+                            font-family: "GOTHICB";
+                            font-size: 18px;
+                            color: #000;
+                            margin-right: 10px;
+                        }
+                        .question-text {
+                            p {
+                                font-family: "GOTHIC";
+                                font-size: 22px;
+                                color: #000;
+                                span.options-text {
+                                    img {
+                                        // width: 100%;
+                                        max-height: 280px;
+                                    }
+                                }
+                            }
+                        }
+                        .question-options {
+                            margin-bottom: 10px;
+                            padding-left: 20px;
+                            p {
+                                margin-bottom: 0px;
+                                span.options-number {
+                                    font-family: "GOTHICB";
+                                    font-size: 16px;
+                                    color: #000;
+                                    margin-right: 10px;
+                                }
+                                span.options-text {
+                                    font-family: "GOTHIC";
+                                    font-size: 22px;
+                                    color: #000;
+                                    img {
+                                        // width: 100%;
+                                        max-height: 200px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .question-options-selected {
+                        margin-bottom: 10px;
+                        padding-left: 20px;
+                        p {
+                            margin-bottom: 0px;
+                            span.options-number {
+                                font-family: "GOTHICB";
+                                font-size: 16px;
+                                color: #000;
+                                margin-right: 10px;
+                            }
+                            span.options-text {
+                                font-family: "GOTHIC";
+                                font-size: 22px;
+                                color: #000;
+                                img {
+                                    // width: 100%;
+                                    max-height: 200px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.modal-dark.akc-bkc-preview-modal-dark .modal-dialog,
+.modal-dark.exam-question-preview-modal-dark .modal-dialog,
+.modal-dark.assigned-exam-details-modal-dark .modal-dialog {
+    margin-top: 60px;
+}
+// .modal-open .modal-dark.exam-question-preview-modal-dark{
+// overflow-y: hidden;
+// }
+.modal-open #root {
+    overflow-y: hidden;
+}
+.modal-backdrop.show {
+    overflow-y: hidden;
+}
+.akc-bkc-preview-box {
+    margin-top: 30px;
+    .akc-bkc-accordian-preview-box {
+        .bkc-akc-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            span {
+                font-family: "GOTHIC";
+                font-size: 16px;
+                color: #bfb0b0;
+            }
+        }
+    }
+    .akc-bkc-filter-box {
+        .row {
+            align-items: center;
+            .explorerSearchWrapper {
+                width: 100%;
+                margin-bottom: 25px;
+                input.form-control {
+                    border: $explorer-border-zero;
+                    background: $bg-transparent;
+                    border-bottom: 1px solid #000;
+                    border-radius: 0px;
+                    color: #000;
+                    font-size: $default-font-size;
+                    padding-left: 0px;
+                    height: 40px;
+                    &:focus {
+                        border-bottom: 1px solid $primary;
+                    }
+                }
+                input.form-control::placeholder {
+                    color: #000;
+                }
+                .btn.btn-outline-secondary {
+                    border: $explorer-border-zero;
+                    background: $bg-transparent;
+                    color: #000;
+                    border-bottom: 1px solid #000;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 0.4s ease-in-out;
+                    border-radius: 0px;
+                    margin-bottom: 0px;
+                    i {
+                        transition: all 0.3s ease-in-out;
+                    }
+                    &:hover {
+                        background-color: $bg-transparent;
+                        color: $primary;
+                        border-color: $primary;
+                    }
+                    &:hover i {
+                        transform: scale(1.3);
+                    }
+                }
+            }
+            .akc-bkc-check-box {
+                .form-check-neonBlack {
+                    .form-check-label {
+                        color: #000;
+                    }
+                }
+            }
+            .count-box {
+                p {
+                    margin-bottom: 0px;
+                    label {
+                        font-size: 16px;
+                        color: #000;
+                        font-family: "GOTHIC";
+                        margin-bottom: 0px;
+                    }
+                    span {
+                        font-size: 16px;
+                        color: #6a008a;
+                        font-family: "GOTHICB";
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .akc-bkc-accordian-preview-box {
+        .accordion {
+            //    margin-bottom: 10px;
+            .card-header {
+                background: #1b1b1b;
+                padding: 10px;
+                margin-bottom: 10px;
+                cursor: pointer;
+                transition: 0.5s linear;
+                width: 100%;
+                border-radius: 9px;
+                border: 0px;
+                text-align: center;
+                span {
+                    font-size: 16px;
+                    color: #888686;
+                    font-family: "GOTHIC";
+                    text-align: center;
+                }
+            }
+            .accordian-content-box {
+                padding: 10px;
+                background: #fff;
+                margin-bottom: 10px;
+                overflow-y: auto;
+                max-height: 55vh;
+                overflow-x: hidden;
+                .common-table-dark {
+                    width: 100%;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    .header-box {
+                        width: 100%;
+                        tr {
+                            width: 100%;
+                            display: flex;
+                            th {
+                                padding: 7px;
+                                border-bottom: 1px solid #2b2b2b;
+                                border-top: 1px solid #2b2b2b;
+                                .black-toolip {
+                                    background: #000;
+                                }
+                                span {
+                                    color: #000;
+                                    font-family: "GOTHICB";
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+
+                    .scroll-body {
+                        width: 100%;
+                        tr {
+                            width: 100%;
+                            display: flex;
+                            td {
+                                padding: 7px;
+                                border-bottom: 1px solid #2b2b2b;
+                                span.td-span {
+                                    color: #000;
+                                    font-family: "GOTHIC";
+                                    font-size: 14px;
+                                }
+                                span.option-key {
+                                    color: #000;
+                                    font-family: "GOTHIC";
+                                    font-size: 14px;
+                                }
+                                .form-check.form-check-neonBlack {
+                                    width: 30px;
+                                    margin: 0 auto;
+                                    margin-bottom: 10px;
+                                }
+                                .option-selected {
+                                    font-family: "GOTHICB";
+                                    word-wrap: break-word;
+                                    white-space: normal;
+                                    word-break: break-word;
+                                }
+                                .question-box {
+                                    span.question-text {
+                                        color: #000;
+                                        font-family: "GOTHICB";
+                                        font-size: 18px;
+                                        img {
+                                            max-height: 200px;
+                                        }
+                                    }
+                                    ul.question-options-box {
+                                        list-style: upper-alpha;
+                                        padding-left: 25px;
+                                        li {
+                                            color: #000;
+                                            span.options-text {
+                                                color: #000;
+                                                font-family: "GOTHIC";
+                                                font-size: 16px;
+                                                margin-left: 8px;
+                                                img {
+                                                    max-height: 200px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .drop-down-box {
+                                    width: max-content;
+                                    margin: 0 auto;
+                                    .dropdown {
+                                        button {
+                                            background: #4e4d4d;
+                                            border: 0px;
+                                            span {
+                                                color: #c7c1c1;
+                                            }
+                                        }
+                                        .dropdown-menu {
+                                            padding: 0px;
+                                            border-radius: 0px;
+                                            position: relative;
+                                            border: 0px;
+                                            min-width: 4rem !important;
+                                            background: #000;
+                                            &::before {
+                                                width: 0;
+                                                height: 0;
+                                                border: 0 solid transparent;
+                                                border-right-width: 12px;
+                                                border-left-width: 12px;
+                                                border-bottom: 12px solid #000;
+                                                position: absolute;
+                                                top: -12px;
+                                                right: 17px;
+                                                content: "";
+                                            }
+                                            a {
+                                                padding: 10px;
+                                                cursor: pointer;
+                                                border-bottom: 1px solid #fff;
+                                                transition: 0.5s linear;
+                                                font-size: 13px;
+                                                font-family: "GOTHICB";
+                                                text-align: center;
+                                                color: #fff;
+                                                &:hover {
+                                                    background: #2d2929;
+                                                }
+                                            }
+                                            a:last-child {
+                                                border-bottom: 0px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .update-que-btn {
+                                    background: transparent;
+                                    border: 1px solid #36ab21;
+                                    border-radius: 20px;
+                                    color: #36ab21;
+                                    padding: 8px 15px;
+                                    font-size: 0.875rem;
+                                    font-family: "GOTHIC";
+                                    box-shadow: 0px 0px 12px 0px #36ab21;
+                                    transition: 0.5s linear;
+                                    border-radius: 25px;
+                                    &:hover {
+                                        background: #36ab21;
+                                        color: #fff;
+                                    }
+                                }
+                                .question-input-box {
+                                    input.form-control {
+                                        background: #060606f0;
+                                        color: #fff;
+                                        &:focus {
+                                            background: #060606f0;
+                                            color: #fff;
+                                        }
+                                    }
+                                    input.form-control::placeholder {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.assigned-exam-details-wrapper {
+    margin-top: 30px;
+    .exam-name-assigned {
+        span {
+            color: #bfb0b0;
+            margin-bottom: 15px;
+            font-family: "GOTHIC";
+            font-size: 16px;
+        }
+    }
+    .assigned-exam-details-grid {
+        padding: 10px;
+        .exapandable-content {
+            background: #131111;
+            padding: 20px 10px;
+            margin-bottom: 10px;
+            border-radius: 9px;
+            display: flex;
+            align-items: center;
+            .row {
+                width: 100%;
+            }
+            p {
+                color: #bfb0b0;
+                margin-bottom: 0px;
+                font-family: "GOTHIC";
+                font-size: 0.875rem;
+                label {
+                    color: #fff;
+                    margin-right: 8px;
+                    font-family: "GOTHICB";
+                    font-size: 0.875rem;
+                    letter-spacing: 1px;
+                }
+            }
+            p.date-created {
+                text-align: right;
+            }
+        }
+    }
+}
+.report-tab-box-wrapper {
+    margin-top: 25px;
+    position: sticky;
+    top: 0;
+    .nav.header-main-nav {
+        border-bottom: 1px solid #313233;
+        .nav-item {
+            width: 50%;
+            a.nav-link {
+                color: #656464;
+                font-size: 18px;
+                border: none;
+                border-bottom: 3px solid transparent;
+                text-align: center;
+                font-family: $common-custome-dark-font-family-regular;
+                border-radius: 0px;
+                &:hover {
+                    border: none;
+                    border-bottom: 3px solid transparent;
+                }
+            }
+            a.nav-link.active {
+                background: none;
+                color: #bfb0b0;
+                border-color: #2b90d9;
+                position: relative;
+                &:after {
+                    content: "";
+                    border-left: 7px solid transparent;
+                    border-right: 7px solid transparent;
+                    border-top: 7px solid #2b90d9;
+                    position: absolute;
+                    bottom: -9px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.confirmation-modal-dark {
+    .confirmation-content {
+        margin-top: 35px;
+        text-align: center;
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #fff;
+            font-family: $common-custome-dark-font-family-regular;
+        }
+        span {
+            font-size: 15px;
+            margin-bottom: 20px;
+            color: #ff0000;
+            font-family: $common-custome-dark-font-family-regular;
+            margin-bottom: 20px;
+            display: block;
+            label {
+                color: #ff0000;
+                font-family: $common-custome-dark-font-family-bold;
+                margin-right: 5px;
+            }
+        }
+        .final-confirm-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #343232;
+            border-radius: 50px;
+            padding: 8px 15px;
+            width: max-content;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            h4 {
+                color: #bfb0b0;
+                font-family: $common-custome-dark-font-family-regular;
+                font-size: 18px;
+                margin-bottom: 0px;
+            }
+            button {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.btn-product-buy 
+{
+background: transparent;
+border: 1px solid white;
+padding: 5px 8px;
+color: white;
+font-family: "GOTHIC";
+font-size: 15px;
+text-align: center;
+transition: 0.5s linear;
+border-radius: 25px;
+box-shadow: 0 0 10px 3px white;
+margin-left: 15px;
+&:hover {
+    background: white;
+    color: green;
+}
+}
+
+
+/**  todo: omkar@refactoring  */
+.instruction-timer-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin-bottom: 10px;
+    align-items: center;
+}
+.common-text-exapand-id {
+    font-size: $text-size-sixteen;
+    color: $cart-dark-text-color;
+    font-family: $common-custome-dark-font-family-regular;
+    margin: 0px 20px;
+}
+.test-information.row{
+        justify-content: center;
+    .count{
+        padding: 0px 7.5px;
+    }
+}
+
+
+@keyframes shineBg {
+    0% {
+      background-position: -100vw;    
+    }
+    100% {
+      background-position: 100vw;   
+    }
+  }
+
+
+  .common-dark-box {
+    .card-box-main-wrapper {
+            .exam-main-list-wrap{
+                position: relative;
+                .dark-card{
+                   background-color: #0c0c0c;
+                    // background-image: linear-gradient(
+                    //   to right,
+                    //   transparent 0%,
+                    //   rgba(255,255,255,0.3) 50%,
+                    //   transparent 100%
+                    // );
+                    // background-repeat: no-repeat;
+                    // background-position: -100vw;
+                    // animation: shineBg 4s infinite linear;
+                    border-radius: 9px;
+                    padding: 18px 8px;
+                }
+                
+            }
+            .exam-main-list-expand-accordian{
+                background: #131111;
+                box-shadow: inset 0 -6px 5px -5px #18dcff;
+                overflow: hidden;
+                border-bottom-right-radius: 18px;
+                border-bottom-left-radius: 18px;
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+        }
+
+    
+}

@@ -1,0 +1,231 @@
+
+/*Media Queries */
+@media(max-width:1199px){ 
+
+                       } /* @media(max-width:1199px) */
+@media(max-width:1024px){ 
+.auth .login-section-wrapper {
+    padding: 68px 20px;
+}
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .dropdown .count-indicator:after {
+    display: inline-block;
+}
+                        } /* @media(max-width:1024px) */					   
+        
+@media(max-width:991px){ 
+.dispMDNone{
+  display: none;
+}
+.night {
+    display: none;
+}
+.auth .login-section-wrapper {
+    height: 100vh;
+    padding: 68px 40px;
+}
+.auth-form-light form.pt-3 {
+    padding-top: 50px !important;
+}
+.sidebar .sidebar-brand-wrapper {
+    display: none !important;
+}
+.sidebar {
+    background: #000000;
+}
+.navbar-menu-wrapper .navbar-brand.brand-logo-mini img {
+    width: 50px;
+}
+.navbar .navbar-menu-wrapper .navbar-nav {
+    margin: 0 0 0 auto;
+}
+.common-dark-box {
+    margin-bottom: 20px;
+}
+.btn-test-discard, .btn-test-submit {
+    margin-bottom: 20px;
+}
+.content-wrapper {
+    padding: 2rem 1rem 0 1rem;
+}
+.details-report-modal .details-report-tab .nav.header-main-nav .nav-item a.nav-link {
+    font-size: 16px!important;
+}
+.trash-box {
+    bottom: 130px !important;
+}
+                       } /* @media(max-width:991px) */
+@media(max-width:823px){
+.common-dark-box .card-box-main-wrapper .card-box-inner-wrapper .dark-card .exapand-card-row .exapand-card-col-arrow-button {
+    width: 100%;
+} 
+.panel-height {
+    height: auto !important;
+}
+ 
+.overflow-scroll {
+    background: white;
+}
+                       } /* @media(max-width:823px) */					   
+@media(max-width:767px){
+  
+
+                       } /* @media(max-width:767px) */
+@media(max-width:736px){
+// .common-dark-box .card-box-main-wrapper .card-box-inner-wrapper .dark-card .exapand-card-row .exapand-card-col-exam-nm {
+//     width: 50%;
+// }
+.common-dark-box .expandable .uk-background-muted .inner.uk-grid .exapandable-content p label {
+    display: block;
+}
+.subject-List .row{
+  justify-content: center;
+}
+.test-information.row {
+    margin: 10px 0px;
+    justify-content: center;
+}
+.modal-dark .modal-title-box h3 {
+    font-size: 15px;
+}
+.test-information.row .col-xs-6.color-white.count {
+    padding: 0px 10px;
+  }
+  .bottom-container{
+      padding: 10px;
+  }
+                       } /* @media(max-width:737px) */
+@media(max-width:667px){
+
+                       }  /* @media(max-width:667px) */ 
+					   
+@media(max-width:600px){
+.common-text-exapand-id{
+    margin-left: 0px;
+}
+.left-btn-expand-box{
+   padding: 10px;
+}
+.common-dark-box .expandable .uk-background-muted .inner.uk-grid .exapandable-content-button-box button.btn.btn-report, .common-dark-box .expandable .uk-background-muted .inner.uk-grid .exapandable-content-button-box button.btn.btn-next{
+    margin-left: 0px;
+}
+.attempted-exam-modal.modal-dark .modal-title-box{
+display: block;
+}
+.attempted-exam-modal.modal-dark .modal-title-box span {
+    display: block;
+    text-align: center;
+}
+.details-report-modal .details-report-tab .answer-box .total-marks-table tr td.amt-td-center {
+    width: 100%;
+}
+td.DispResWidthFull {
+    width: 0%!important;
+}
+.details-report-modal .details-report-tab .answer-box .accordion .details-report-content-accordian .question-box ul {
+    padding-left: 10px;
+}
+.btn-test-discard {
+    margin-top: 10px;
+}
+.no-data-found .no-data-found-sub h3 {
+    font-size: 16px;
+    line-height: 25px;
+}
+.test-information-top-wrapper{
+    text-align: center;
+}
+.answer-panle-selected{
+    display: block;
+    text-align: center;
+}
+.btn-test-discard, .btn-test-submit {
+    width: 100%;
+    margin-left: 0px !important;
+}
+.footer .footer-shree {
+    position: initial;
+    right: initial;
+    top: initial;
+    margin-right: 0px !important;
+}
+.common-dark-box .common-title-wrapper-dark{
+    display: block;
+}
+.breadcrumb {
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+                       } /* @media(max-width:600px) */ 	
+					      
+@media(max-width:480px){					  
+.common-dark-box .card-box-main-wrapper .card-box-inner-wrapper .dark-card .exapand-card-row {
+    display: block;
+}
+.exapnd-card-box{
+  margin-bottom: 10px
+}	
+.common-dark-box .card-box-main-wrapper .card-box-inner-wrapper .dark-card .expand-arrow-box-exam {
+    justify-content: center;
+}	
+.common-dark-box {
+    padding: 20px 10px;
+}	
+.footer .footer-shree {
+    position: relative;
+    right: initial;
+    top: initial;
+}  
+// .common-dark-box .card-box-main-wrapper .card-box-inner-wrapper .dark-card .exapand-card-row .exapand-card-col-exam-nm {
+//     width: 100%;
+// } 
+.common-text-exapand-id {
+    margin: 0px 20px 0px 0px;
+} 
+.common-dark-box .expandable .uk-background-muted .inner.uk-grid .exapandable-content p.date-created {
+    text-align: left;
+} 
+.common-dark-box .expandable .uk-background-muted .inner.uk-grid .exapandable-content p {
+    margin-bottom: 10px;
+}  
+.text-size-12 {
+    text-align: center;
+    margin-bottom: 20px !important;
+}
+.btn-test-discard, .btn-test-submit {
+    margin: 0 auto;
+    text-align: center!important;
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 0px!important;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.details-report-modal .details-report-tab .nav.header-main-nav .nav-item {
+    width: 100% !important;
+}
+.question-box-quastion-box-attend ul{
+  padding-left: 5px;
+}
+.test-information.row {
+    margin: 10px 0px;
+   justify-content: initial;
+}
+.common-dark-box .expandable .uk-background-muted .inner.uk-grid .exapandable-content-button-box button.btn.btn-next {
+    margin-left: 0px!important;
+}
+
+                        } /* @media(max-width:480px) */ 	
+			
+@media(max-width:460px){
+
+                        } /* @media(max-width:480px) */ 
+@media(max-width:400px){
+
+                        } /* @media(max-width:400px) */ 
+
+@media(max-width:330px){
+.test-information.row .col-xs-6.color-white.count{
+  width: 100%;
+}
+                       } /* @media(max-width:330px) */
